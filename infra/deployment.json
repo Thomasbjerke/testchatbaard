@@ -333,7 +333,7 @@
     }
   },
   "variables": {
-    "WebAppImageName": "DOCKER|fruoccopublic.azurecr.io/rag-webapp",
+    "WebAppImageName": "DOCKER|ttchatbaard.azurecr.io/rag-webapp",
     "AdminWebAppImageName": "DOCKER|fruoccopublic.azurecr.io/rag-adminwebapp",
     "BackendImageName": "DOCKER|fruoccopublic.azurecr.io/rag-backend",
     "BlobContainerName": "documents",

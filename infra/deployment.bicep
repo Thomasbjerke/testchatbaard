@@ -153,7 +153,7 @@ param newGuidString string = newGuid()
 ])
 param authType string = 'rbac'
 
-var WebAppImageName = 'DOCKER|fruoccopublic.azurecr.io/rag-webapp'
+var WebAppImageName = 'DOCKER|ttchatbaard.azurecr.io/rag-webapp'
 var AdminWebAppImageName = 'DOCKER|fruoccopublic.azurecr.io/rag-adminwebapp'
 var BackendImageName = 'DOCKER|fruoccopublic.azurecr.io/rag-backend'
 
