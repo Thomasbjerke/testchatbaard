@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Stack, TextField } from "@fluentui/react";
 import { SendRegular } from "@fluentui/react-icons";
-import Send from "../../assets/Send.svg";
+import sendtt from "../../assets/sendtt.png";
 import MicrophoneIcon from "../../assets/mic-outline.svg";
 import styles from "./QuestionInput.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -141,7 +141,7 @@ export const QuestionInput = ({
             <SendRegular className={styles.questionInputSendButtonDisabled} />
           ) : (
             <img
-              src={Send}
+              src={sendtt}
               className={styles.questionInputSendButton}
               alt="Send"
             />
