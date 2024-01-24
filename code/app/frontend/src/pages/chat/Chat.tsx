@@ -17,7 +17,7 @@ import rehypeRaw from "rehype-raw";
 import { v4 as uuidv4 } from "uuid";
 
 import styles from "./Chat.module.css";
-import ttlogo from "../../assets/ttlogo.png";
+import ttlogonegativ from "../../assets/ttlogonegativ.png";
 
 import {
   ChatMessage,
@@ -268,7 +268,7 @@ const Chat = () => {
         <div className={styles.chatContainer}>
           {!lastQuestionRef.current ? (
             <Stack className={styles.chatEmptyState}>
-              <img src={ttlogo} className={styles.chatIcon} aria-hidden="true" />
+              <img src={ttlogonegativ} className={styles.chatIcon} aria-hidden="true" />
               <h1 className={styles.chatEmptyStateTitle}>Start chatting</h1>
               <h2 className={styles.chatEmptyStateSubtitle}>
                 This chatbot is configured to answer your questions
