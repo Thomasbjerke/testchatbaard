@@ -2,7 +2,7 @@
     height: 120px;
     position: absolute;
     left: 6.5%;
-    right: 0%;
+    right: 0%;ƒ
     top: 0%;
     bottom: 0%;
     background: #FFFFFF;
@@ -61,7 +61,7 @@
 }
 
 .questionInputMicrophone {
-    width: 24px;
+    width: 32px;
     height: 24px;
     margin-bottom: 12px;
   }

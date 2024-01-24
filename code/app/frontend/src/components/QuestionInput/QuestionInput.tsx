@@ -122,6 +122,7 @@ export const QuestionInput = ({
               src={ttmic}
               className={styles.microphoneIcon}
               alt="Microphone"
+              height="32px"
             />
           )}
         </div>
@@ -144,6 +145,7 @@ export const QuestionInput = ({
               src={sendtt}
               className={styles.questionInputSendButton}
               alt="Send"
+              height="32px"
             />
           )}
         </div>
