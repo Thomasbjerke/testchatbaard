@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Stack, TextField } from "@fluentui/react";
 import { SendRegular } from "@fluentui/react-icons";
 import sendtt from "../../assets/sendtt.png";
-import MicrophoneIcon from "../../assets/mic-outline.svg";
+import ttmic from "../../assets/ttmic.png";
 import styles from "./QuestionInput.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMicrophone } from "@fortawesome/free-solid-svg-icons";
@@ -119,7 +119,7 @@ export const QuestionInput = ({
             />
           ) : (
             <img
-              src={MicrophoneIcon}
+              src={ttmic}
               className={styles.microphoneIcon}
               alt="Microphone"
             />
