@@ -17,7 +17,7 @@ jobs:
       with:
         registry: ttchatbaard.azurecr.io
         username: ttchatbaard
-        password: LrsMQekaLkBxb0HpxrvVLtn+cSKQrOid00bd0us3Vw+ACRBXQecI
+        password: ezToF5VoGShqYW8u/gdjeHGXdKBuKR2qc1wfXdPluJ+ACRAZd3EV
     
     - uses: actions/checkout@v4
     - name: Build the Docker image
