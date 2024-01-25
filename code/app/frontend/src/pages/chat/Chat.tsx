@@ -316,7 +316,7 @@ const Chat = () => {
                   <div className={styles.chatMessageGpt}>
                     <Answer
                       answer={{
-                        answer: "Generating answer...",
+                        answer: "Genererer svar...",
                         citations: [],
                       }}
                       onCitationClicked={() => null}
@@ -338,7 +338,7 @@ const Chat = () => {
                 horizontal
                 className={styles.stopGeneratingContainer}
                 role="button"
-                aria-label="Stop generating"
+                aria-label="Stopp generering"
                 tabIndex={0}
                 onClick={stopGenerating}
                 onKeyDown={(e) =>
@@ -350,7 +350,7 @@ const Chat = () => {
                   aria-hidden="true"
                 />
                 <span className={styles.stopGeneratingText} aria-hidden="true">
-                  Stop generating
+                  Stopp generering
                 </span>
               </Stack>
             )}
