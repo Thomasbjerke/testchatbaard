@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 const Layout = () => {
     const [isSharePanelOpen, setIsSharePanelOpen] = useState<boolean>(false);
     const [copyClicked, setCopyClicked] = useState<boolean>(false);
-    const [copyText, setCopyText] = useState<string>("Copy URL");
+    const [copyText, setCopyText] = useState<string>("Kopier URL");
 
     const handleShareClick = () => {
         setIsSharePanelOpen(true);
@@ -17,7 +17,7 @@ const Layout = () => {
     const handleSharePanelDismiss = () => {
         setIsSharePanelOpen(false);
         setCopyClicked(false);
-        setCopyText("Copy URL");
+        setCopyText("Kopier URL");
     };
 
     const handleCopyClick = () => {
@@ -27,7 +27,7 @@ const Layout = () => {
 
     useEffect(() => {
         if (copyClicked) {
-            setCopyText("Copied URL");
+            setCopyText("URL kopiert");
         }
     }, [copyClicked]);
 
@@ -44,9 +44,9 @@ const Layout = () => {
                         <Link to="/" className={styles.headerTitleContainer}>
                             <h3 className={styles.headerTitle}>Chat-Bård</h3>
                         </Link>
-                        <div className={styles.shareButtonContainer} role="button" tabIndex={0} aria-label="Share" onClick={handleShareClick} onKeyDown={e => e.key === "Enter" || e.key === " " ? handleShareClick() : null}>
+                        <div className={styles.shareButtonContainer} role="button" tabIndex={0} aria-label="Del" onClick={handleShareClick} onKeyDown={e => e.key === "Enter" || e.key === " " ? handleShareClick() : null}>
                             <ShareRegular className={styles.shareButton} />
-                            <span className={styles.shareButtonText}>Share</span>
+                            <span className={styles.shareButtonText}>Del</span>
                         </div>
                     </Stack>
                 </div>
@@ -71,7 +71,7 @@ const Layout = () => {
                       }]
                 }}
                 dialogContentProps={{
-                    title: "Share the web app",
+                    title: "Del chatbotten",
                     showCloseButton: true
                 }}
             >

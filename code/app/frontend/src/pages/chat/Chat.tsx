@@ -16,7 +16,7 @@ import rehypeRaw from "rehype-raw";
 import { v4 as uuidv4 } from "uuid";
 
 import styles from "./Chat.module.css";
-import ttlogonegativ from "../../assets/ttlogonegativ.png";
+import ttlogotekst from "../../assets/ttlogotekst.png";
 
 import {
   ChatMessage,
@@ -267,10 +267,10 @@ const Chat = () => {
         <div className={styles.chatContainer}>
           {!lastQuestionRef.current ? (
             <Stack className={styles.chatEmptyState}>
-              <img src={ttlogonegativ} className={styles.chatIcon} aria-hidden="true" />
-              <h1 className={styles.chatEmptyStateTitle}>Start chatting</h1>
+              <img src={ttlogotekst} className={styles.chatIcon} aria-hidden="true" />
+              <h1 className={styles.chatEmptyStateTitle}>Begynn å chatte</h1>
               <h2 className={styles.chatEmptyStateSubtitle}>
-                This chatbot is configured to answer your questions
+                Denne chatbotten svarer på spørsmål om trafikksikkerhet
               </h2>
             </Stack>
           ) : (
@@ -356,7 +356,7 @@ const Chat = () => {
             )}
             <QuestionInput
               clearOnSend
-              placeholder="Type a new question..."
+              placeholder="Skriv inn et spørsmål..."
               disabled={isLoading}
               onSend={(question) => makeApiRequest(question)}
               recognizedText={recognizedText}
@@ -376,7 +376,7 @@ const Chat = () => {
               horizontalAlign="space-between"
               verticalAlign="center"
             >
-              <span className={styles.citationPanelHeader}>Citations</span>
+              <span className={styles.citationPanelHeader}>Kilder</span>
               <DismissRegular
                 className={styles.citationPanelDismiss}
                 onClick={() => setIsCitationPanelOpen(false)}
